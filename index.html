@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+  <title>Chai's Github.io Page</title>
+  <style type="text/css">
+    h1 {
+      margin: 0.2em 0;
+    }
+
+    h2 {
+      margin: 0.1em 0;
+    }
+
+    .sensors_container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .loading_indicator {
+      width: 250px;
+      height 250px;
+    }
+
+    .loading_indicator_icon {
+      margin: 50px;
+      animation: spin-animation 1.5s infinite;
+      animation-timing-function: linear;
+    }
+
+    @keyframes spin-animation {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(359deg);
+      }
+    }
+
+    #popupSensorInfo > div:last-child {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+<h1>Air Quality Sensor Readings</h1>
+<p>Note: Higher number/purple = bad!!!</p>
+<div class="sensors_container">
+  <div class="sensor">
+    <h2 class="sensor-location_name">Somerset:</h2>
+    <div id='PurpleAirWidget_177177_module_AQI_conversion_C0_average_10_layer_standard'>
+      <img class="loading_indicator_icon" alt="Loading icon" src="./loading_indicator.svg" width="150" height="150">
+    </div>
+    <script src='https://www.purpleair.com/pa.widget.js?key=VVXH6DCHFTVK2VWA&module=AQI&conversion=C0&average=10&layer=standard&container=PurpleAirWidget_177177_module_AQI_conversion_C0_average_10_layer_standard'></script>
+  </div>
+  <div class="sensor">
+    <h2 class="sensor-location_name">Edison:</h2>
+    <div id='PurpleAirWidget_97935_module_AQI_conversion_C0_average_10_layer_standard'>
+      <img class="loading_indicator_icon" alt="Loading icon" src="./loading_indicator.svg" width="150" height="150">
+    </div>
+    <script src='https://www.purpleair.com/pa.widget.js?key=111SKP0R3BW9G7X5&module=AQI&conversion=C0&average=10&layer=standard&container=PurpleAirWidget_97935_module_AQI_conversion_C0_average_10_layer_standard'></script>
+  </div>
+  <div class="sensor">
+    <h2 class="sensor-location_name">Ocean County:</h2>
+    <div id='PurpleAirWidget_50925_module_AQI_conversion_C0_average_10_layer_standard'>
+      <img class="loading_indicator_icon" alt="Loading icon" src="./loading_indicator.svg" width="150" height="150">
+    </div>
+    <script src='https://www.purpleair.com/pa.widget.js?key=5QXQ7IG7WL364T9S&module=AQI&conversion=C0&average=10&layer=standard&container=PurpleAirWidget_50925_module_AQI_conversion_C0_average_10_layer_standard'></script>
+  </div>
+  <div class="sensor">
+    <h2 class="sensor-location_name">NYC:</h2>
+    <div id='PurpleAirWidget_165783_module_AQI_conversion_C0_average_10_layer_standard'>
+      <img class="loading_indicator_icon" alt="Loading icon" src="./loading_indicator.svg" width="150" height="150">
+    </div>
+    <script src='https://www.purpleair.com/pa.widget.js?key=KYUEIY7M4NKWY8GT&module=AQI&conversion=C0&average=10&layer=standard&container=PurpleAirWidget_165783_module_AQI_conversion_C0_average_10_layer_standard'></script>
+  </div>
+  <div class="sensor">
+    <h2 class="sensor-location_name">Durham:</h2>
+    <div id='PurpleAirWidget_167253_module_AQI_conversion_C0_average_10_layer_standard'>
+      <img class="loading_indicator_icon" alt="Loading icon" src="./loading_indicator.svg" width="150" height="150">
+    </div>
+    <script src='https://www.purpleair.com/pa.widget.js?key=E0U3C501E83LTHIN&module=AQI&conversion=C0&average=10&layer=standard&container=PurpleAirWidget_167253_module_AQI_conversion_C0_average_10_layer_standard'></script>
+  </div>
+</div>
+</body>
+</html>
